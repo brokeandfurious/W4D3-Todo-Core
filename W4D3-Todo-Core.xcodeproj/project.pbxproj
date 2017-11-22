@@ -14,6 +14,11 @@
 		9D0FA75D1FC5E38F00C080AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FA75C1FC5E38F00C080AA /* Assets.xcassets */; };
 		9D0FA7601FC5E38F00C080AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FA75E1FC5E38F00C080AA /* LaunchScreen.storyboard */; };
 		9D0FA7631FC5E38F00C080AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA7621FC5E38F00C080AA /* main.m */; };
+		9D0FA76D1FC5E4CA00C080AA /* Task+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA76A1FC5E4CA00C080AA /* Task+CoreDataClass.m */; };
+		9D0FA76E1FC5E4CA00C080AA /* Task+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA76C1FC5E4CA00C080AA /* Task+CoreDataProperties.m */; };
+		9D0FA7721FC5E86B00C080AA /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA7711FC5E86B00C080AA /* TodoCell.m */; };
+		9D0FA7751FC5EEA800C080AA /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA7741FC5EEA800C080AA /* AddViewController.m */; };
+		9D0FA7781FC5F27C00C080AA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FA7771FC5F27C00C080AA /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,16 @@
 		9D0FA75F1FC5E38F00C080AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0FA7611FC5E38F00C080AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0FA7621FC5E38F00C080AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D0FA7691FC5E4CA00C080AA /* Task+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataClass.h"; sourceTree = "<group>"; };
+		9D0FA76A1FC5E4CA00C080AA /* Task+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataClass.m"; sourceTree = "<group>"; };
+		9D0FA76B1FC5E4CA00C080AA /* Task+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataProperties.h"; sourceTree = "<group>"; };
+		9D0FA76C1FC5E4CA00C080AA /* Task+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataProperties.m"; sourceTree = "<group>"; };
+		9D0FA7701FC5E86B00C080AA /* TodoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		9D0FA7711FC5E86B00C080AA /* TodoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
+		9D0FA7731FC5EEA800C080AA /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		9D0FA7741FC5EEA800C080AA /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		9D0FA7761FC5F27C00C080AA /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9D0FA7771FC5F27C00C080AA /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,7 @@
 		9D0FA7441FC5E38F00C080AA = {
 			isa = PBXGroup;
 			children = (
+				9D0FA76F1FC5E4CF00C080AA /* Model */,
 				9D0FA74F1FC5E38F00C080AA /* W4D3-Todo-Core */,
 				9D0FA74E1FC5E38F00C080AA /* Products */,
 			);
@@ -64,6 +80,12 @@
 				9D0FA7511FC5E38F00C080AA /* AppDelegate.m */,
 				9D0FA7531FC5E38F00C080AA /* ViewController.h */,
 				9D0FA7541FC5E38F00C080AA /* ViewController.m */,
+				9D0FA7731FC5EEA800C080AA /* AddViewController.h */,
+				9D0FA7741FC5EEA800C080AA /* AddViewController.m */,
+				9D0FA7761FC5F27C00C080AA /* DetailViewController.h */,
+				9D0FA7771FC5F27C00C080AA /* DetailViewController.m */,
+				9D0FA7701FC5E86B00C080AA /* TodoCell.h */,
+				9D0FA7711FC5E86B00C080AA /* TodoCell.m */,
 				9D0FA7561FC5E38F00C080AA /* Main.storyboard */,
 				9D0FA75C1FC5E38F00C080AA /* Assets.xcassets */,
 				9D0FA75E1FC5E38F00C080AA /* LaunchScreen.storyboard */,
@@ -72,6 +94,17 @@
 				9D0FA7591FC5E38F00C080AA /* W4D3_Todo_Core.xcdatamodeld */,
 			);
 			path = "W4D3-Todo-Core";
+			sourceTree = "<group>";
+		};
+		9D0FA76F1FC5E4CF00C080AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D0FA7691FC5E4CA00C080AA /* Task+CoreDataClass.h */,
+				9D0FA76A1FC5E4CA00C080AA /* Task+CoreDataClass.m */,
+				9D0FA76B1FC5E4CA00C080AA /* Task+CoreDataProperties.h */,
+				9D0FA76C1FC5E4CA00C080AA /* Task+CoreDataProperties.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0FA76D1FC5E4CA00C080AA /* Task+CoreDataClass.m in Sources */,
 				9D0FA7551FC5E38F00C080AA /* ViewController.m in Sources */,
+				9D0FA7781FC5F27C00C080AA /* DetailViewController.m in Sources */,
+				9D0FA76E1FC5E4CA00C080AA /* Task+CoreDataProperties.m in Sources */,
 				9D0FA7521FC5E38F00C080AA /* AppDelegate.m in Sources */,
 				9D0FA7631FC5E38F00C080AA /* main.m in Sources */,
 				9D0FA75B1FC5E38F00C080AA /* W4D3_Todo_Core.xcdatamodeld in Sources */,
+				9D0FA7751FC5EEA800C080AA /* AddViewController.m in Sources */,
+				9D0FA7721FC5E86B00C080AA /* TodoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
